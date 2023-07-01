@@ -61,4 +61,9 @@
   defaultBranch = master
 [user]
 	email = gilarybacnis@gmail.com
-	name = Gilary Bacnis
+	name = gilary bacnis
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
